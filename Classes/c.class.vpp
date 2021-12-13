@@ -1,0 +1,22 @@
+Class Relogio
+
+    Fvar segundo private
+    Fvar minuto private
+    Fvar hora private
+
+    getAll()
+    setAll()
+
+    function public init(segundoA, minutoA, horaA)
+        var segundo = segundoA
+        var minuto = minutoA
+        var hora = horaA
+    End function
+
+    function public equalize(a)
+        var segundo = a.getSegundo()
+        var minuto = a.getMinuto
+        var hora = a.getHora()
+    end function
+    
+end class

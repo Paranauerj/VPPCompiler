@@ -1,0 +1,19 @@
+<XML version="1.0.0">
+	<VBS id="Version"> 5.812.10240.16384 </VBS>
+	<Instalation id="Path"> C:\Users\FiercePC\Documents\Arquivos desktop\VPP Compiler\ </Instalation>
+	<Product id="Version"> 1.9 </Product>
+	<Product id="Version Compilation Date"> 15/05/2019 </Product>
+	<Product id="Initial Compilation"> 12/07/2018 </Product>
+	<Extension id="Include">  FUNCOES.vbs </Extension>
+	<Extension id="Include">  HTMLGEN.vbs </Extension>
+	<Extension id="Include">  NOME.HTML </Extension>
+	<Extension id="Include">  PAGINALOADLOGIN.HTML </Extension>
+	<Extension id="Include">  TESTE.vbs </Extension>
+	<Extension id="Include">  WEBSERVICE.vbs </Extension>
+	<Configuration id="Key"> 7D74319D886528488A238F2BC1EF2D75 </Configuration>
+	<Configuration id="Creator"> JOAO_PAULO_COSTA_RUA2 </Configuration>
+	<Configuration id="Token"> E10ADC3949BA59ABBE56E057F20F883E </Configuration>
+	<Configuration id="Launch-Version"> 2.6 </Configuration>
+	<Configuration id="Version"> RELEASE </Configuration>
+	<Configuration id="Target-Plataform"> WINDOWS_10 </Configuration>
+</XML>

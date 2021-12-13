@@ -1,0 +1,25 @@
+{
+    "name": "vpp",
+    "displayName": "vpp",
+    "description": "Estilizacao para a nova linguagem VPP",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "vpp",
+            "aliases": ["vpp", "vpp"],
+            "extensions": ["vpp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "vpp",
+            "scopeName": "main.wsf",
+            "path": "./syntaxes/vpp.tmLanguage.json"
+        }]
+    }
+}

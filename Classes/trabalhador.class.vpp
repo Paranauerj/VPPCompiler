@@ -1,0 +1,15 @@
+Class trabalhador extends pessoa
+
+    Fvar cnh public
+
+    Function public getInfoT()
+
+        var info = getInfo() & |LINE| & "cnh: " & cnh
+        return info
+
+    End function
+
+    getAll()
+    setAll()
+
+end Class

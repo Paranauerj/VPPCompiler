@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "vpp",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#base"
+		},
+		{
+			"include": "#resource"
+		},
+		{
+			"include": "#comment"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.vpp",
+				"match": "(?i)\\b(END_)?(return|var|fvar|svar|function|object|jump errors|end|read|print|printvar|while|loop|if|else)\\b"
+			}]
+		},
+
+		"base": {
+			"patterns": [{
+				"name": "keyword.base.control.vpp",
+				"match": "(?i)\\b(END_)?(code|class|start|include|import|cinclude|statement|main)\\b"
+			}]
+		},
+		"resource": {
+			"patterns": [{
+				"name": "keyword.resource.control.vpp",
+				"match": "(?i)\\b(END_)?(csvtovpp|vpptocsv|bsort|sort)\\b"
+			}]
+		},
+		
+
+		"comment": {
+			"name": "keyword.comment.control.vpp",
+			"begin": "//",
+			"end": "\n"
+		},
+		"strings": {
+			"name": "string.quoted.double.vpp",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.vpp",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "main.wsf"
+}

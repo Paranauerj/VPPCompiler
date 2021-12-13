@@ -1,0 +1,71 @@
+Class carro
+
+    // Declarando os atributos da classe
+    FVar id private
+    FVar marca public
+    FVar modelo public
+    FVar ano public
+    FVar preco public
+    FVar base private
+    FVar tem private
+
+    SVar SArray StaticArray(10,2) private
+    SVar DArray arr private
+
+    Function Public Initialize(idObj, baseObj)
+        var id = idObj
+        var id = convert(id, "str")
+        var base = baseObj
+
+        // Pega os valores do BD e armazena-os em arrays
+        BD.Lib:GetValueRow base 0 = ids
+        BD.Lib:GetValueRow base 1 = marcas
+        BD.Lib:GetValueRow base 2 = modelos
+        BD.Lib:GetValueRow base 3 = anos
+        BD.Lib:GetValueRow base 4 = precos
+
+        // Verifica se o id existe na base de dados
+        var indice = InArray(ids, id)
+
+        // Se existir, entao passa os valores da base de dados para os atributos da classe. Senão, diz que nao foi encontrado
+        if indice != -1 ->
+            var marca = marcas(indice)
+            var modelo = modelos(indice)
+            var ano = anos(indice)
+            var preco = precos(indice)
+            var tem = 1
+        else
+            print ID:_{{idObj}}_nao_foi_encontrado!\nTente_Novamente!
+            var tem = 0
+        <-
+
+
+    End Function
+
+    Function Public createNew(marcaObj, modeloObj, anoObj, precoObj)
+
+        // print {{base}}_e_a_base
+        var marca = marcaObj
+        var modelo = modeloObj
+        var ano = anoObj
+        var preco = precoObj
+        var tem = 1
+        
+        BD.Lib:AddValues {{base}} id marcaObj modeloObj anoObj precoObj
+
+    End Function
+
+    // Retorna -1 caso nao esteja na base de dados
+    Function Public isCar()
+        return tem
+    End Function
+    
+    // Gera Get's para todos os atributos da classe
+    GetAll()
+
+    // Gera Set's apenas para os atributos publicos
+    SetPublic()
+
+
+    // Fim da classe
+End class

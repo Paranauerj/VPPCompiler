@@ -1,0 +1,16 @@
+Class pessoa
+
+    Fvar nome private
+    Fvar idade private
+
+    Function public getInfo()
+
+        var info = "Idade:_" & idade & vbcrlf & "Nome:_" & nome
+        return info
+
+    End function
+
+    getAll()
+    setAll()
+
+end Class

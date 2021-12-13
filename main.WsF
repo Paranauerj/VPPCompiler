@@ -1,0 +1,28 @@
+<job id="compilador-com-vbs">
+<script language="VBScript" src="Config/Recursos/EncoderWsf.vbs"/>
+<script language="VBScript" src="Config/Recursos/Criptography.vbs"/>
+<script language="VBScript" src="Config/Recursos/VerVersaoVBS.vbs"/>
+<script language="VBScript" src="Config/Recursos/XMLProjectGenerator.vbs"/>
+<script language="VBScript" src="Bibliotecas/Math.vbs"/>
+<script language="VBScript" src="Bibliotecas/SystemFiles.vbs"/>
+<script language="VBScript" src="Bibliotecas/Comunicacao.vbs"/>
+<script language="VBScript" src="Bibliotecas/BD.vbs"/>
+<script language="VBScript" src="Bibliotecas/Media.vbs"/>
+<script language="VBScript" src="Bibliotecas/JSON.vbs"/>
+<script language="JScript" src="Bibliotecas/JSON.js"/>
+<script language="VBScript" src="Bibliotecas/Web.vbs"/>
+<script language="VBScript" src="Extensoes/FUNCOES.vbs"/>
+<script language="VBScript" src="Extensoes/WEBSERVICE.vbs"/>
+<script language="VBScript" src="Controller/controlador.vbs"/>
+<script language="VBScript" src="Interface/terminal.vbs"/>
+<script language="VBScript" src="Interpretador/classGenerator.vbs"/>
+<script language="VBScript" src="Interpretador/interpretadorbasico.vbs"/>
+
+<script language="VBScript" src="Extensoes/TESTE.vbs"/>
+Break
+
+
+<script language="VBScript">
+	rodarTerminal() 
+</script>
+</job>

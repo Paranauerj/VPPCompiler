@@ -1,0 +1,71 @@
+Class teste1
+
+    Fvar nick private
+    Fvar senha private
+    Fvar nome private
+    Fvar telefone private
+    Fvar endereco private
+
+    function public setNome(param1)
+
+        var nome = param1
+
+    end function
+
+    Function public setNick(param1)
+
+        var nick = param1
+
+    End function
+
+    Function public setSenha(param1)
+
+        var senha = md5(param1)
+
+    End function
+
+    Function public setTelefone(param1)
+
+        var telefone = param1
+
+    End function
+
+    Function public setEndereco(param1)
+
+        var endereco = param1
+
+    End function
+
+    Function public saveValues()
+
+        BD.Lib:AddValues Usuario nick senha endereco nome telefone
+
+    End function
+
+    Function public getNick()
+
+        return nick
+
+    End function
+
+    Function public getNome()
+
+        return nome
+
+    End function
+	
+	Function public pegaBD(base, row)
+		
+		BD.Lib:GetValueRow base row = nicks
+		return nicks
+	
+	End Function
+
+    Function public chamaBD(base)
+		
+		// Conecta ao BD
+        BD.Lib:UseBD base
+	
+	End Function
+
+end class
